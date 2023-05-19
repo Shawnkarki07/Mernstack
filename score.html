@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            border: 1px solid green;
+        }
+/* overwrite by order */
+        div{
+           border: 1px solid cyan; 
+        } 
+        /* score 010 */
+        .red-border{
+            border: 10px solid red !important;
+        }
+        /* score 100 */
+        #black-border{
+            border: 10px solid black;
+        }
+        /* score 101 */
+        div#black-border{
+            border: 1px solid black;
+        }
+        /* score 110 */
+        .red-border#black-border{
+            border: 10px solid green;
+        }
+        /* score 111 */
+        div.red-border#black-border{
+            border: 30px solid black;
+        }
+        /* score 112 */
+        /* body div.red-border#black-border{
+        border: 40px solid red;
+        } */
+
+            
+        
+
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div id="black-border" class="red-border">
+        <p>
+            !important>inline>id(1 _ _)>class( _ 1 _ )>element(_ _ 1)
+        </p>
+        <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit doloribus est, aperiam aspernatur officia voluptatum vero odit laboriosam sunt, eos asperiores provident aut nisi, repudiandae blanditiis officiis quos consequuntur modi!
+        </p>
+    </div>
+    <a href="./measurement unit.html">measure</a>
+    
+    
+   
+
+</body>
+</html>
